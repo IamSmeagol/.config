@@ -1,6 +1,6 @@
 require("smeagol.remap")
 
-
+-- Allows + and * registers to go to Windows system keyboard
 vim.g.clipboard = {
                    name = 'WslClipboard',
                    copy = {

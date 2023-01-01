@@ -1,4 +1,4 @@
-require("smeagol.remap")
+require("smeagol/remap")
 
 -- Allows + and * registers to go to Windows system keyboard
 vim.g.clipboard = {
@@ -13,3 +13,11 @@ vim.g.clipboard = {
                    },
                    cache_enabled = 0,
                  }
+
+
+vim.o.relativenumber = true
+vim.o.tabstop = 4
+-- set shiftwidth=4
+-- set autoindent
+
+

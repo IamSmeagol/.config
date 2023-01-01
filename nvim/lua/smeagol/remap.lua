@@ -5,3 +5,5 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("c", "w", vim.cmd.wall)
 -- Normal mode esc ends highlights and searches
 vim.keymap.set("n", "<Esc>", ":nohl<CR>:echo<CR>")
+-- Mouse click results in "a"
+

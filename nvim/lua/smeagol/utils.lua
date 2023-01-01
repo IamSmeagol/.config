@@ -19,5 +19,3 @@ vim.o.relativenumber = true
 vim.o.tabstop = 4
 -- set shiftwidth=4
 -- set autoindent
-
-

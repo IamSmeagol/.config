@@ -3,5 +3,7 @@
 vim.g.mapleader = " "
 
 ---------
-require("smeagol/lazy")
+require("smeagol/plugins/lazy/main")
+require("smeagol/plugins/coc/main")
 require("smeagol/utils")
+

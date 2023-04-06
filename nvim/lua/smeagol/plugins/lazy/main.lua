@@ -12,4 +12,4 @@ end
 vim.opt.runtimepath:prepend(lazypath)
 
 
-require("lazy").setup("smeagol.plugins.load-plugins")
+require("lazy").setup("smeagol.plugins.lazy.load-plugins")

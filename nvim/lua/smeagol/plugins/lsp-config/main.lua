@@ -1,4 +1,5 @@
 require('mason').setup()
+require('mason-lspconfig').setup()
 
 require'lspconfig'.lua_ls.setup {
   settings = {
@@ -20,11 +21,6 @@ require'lspconfig'.lua_ls.setup {
       workspace = {
 	      workspace = { checkThirdParty = false }, -- FIX https://github.com/sumneko/lua-language-server/issues/679#issuecomment-925524834
       },
-      -- Do not send telemetry data containing a randomized but unique identifier
-      telemetry = {
-        enable = false,
-      },
     },
   },
 }
-

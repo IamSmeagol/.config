@@ -5,4 +5,3 @@ vim.g.mapleader = " "
 
 require("smeagol/plugins/pluginhandler")
 require("smeagol/utils")
-

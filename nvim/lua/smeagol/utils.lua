@@ -17,7 +17,7 @@ vim.g.clipboard = {
 
 vim.o.relativenumber = true
 vim.o.tabstop = 4
-vim.oshiftwidth = 3
+vim.o.shiftwidth = 3
 -- set autoindent
 
 

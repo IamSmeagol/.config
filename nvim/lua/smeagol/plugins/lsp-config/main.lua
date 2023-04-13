@@ -1,6 +1,6 @@
 require('mason').setup()
 require('mason-lspconfig').setup {
-		ensure_installed = { 'lua_ls' },
+		ensure_installed = { 'lua_ls', 'jsonls' },
 }
 
 require'lspconfig'.lua_ls.setup {
@@ -25,4 +25,13 @@ require'lspconfig'.lua_ls.setup {
       },
     },
   },
+}
+
+require'lspconfig'.jsonls.setup {
+   settings = {
+	  json = {
+		 schemas = require('schemastore').json.schemas(),
+		 validate = { enable = true },
+	  },
+   },
 }

@@ -17,7 +17,8 @@ vim.g.clipboard = {
 
 vim.o.relativenumber = true
 vim.o.tabstop = 4
--- set shiftwidth=3
+vim.oshiftwidth = 3
 -- set autoindent
+
 
 vim.cmd[[colorscheme nord]]

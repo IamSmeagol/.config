@@ -60,7 +60,7 @@ symbol = " "
 symbol = " "
 
 [lua]
-symbol = " "
+symbol = "󰢱"
 
 [memory_usage]
 symbol = " "

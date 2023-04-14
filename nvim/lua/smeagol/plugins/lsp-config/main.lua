@@ -35,3 +35,4 @@ require'lspconfig'.jsonls.setup {
 	  },
    },
 }
+require'lspconfig'.taplo.setup{}

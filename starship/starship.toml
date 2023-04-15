@@ -7,7 +7,7 @@ discharging_symbol = '💀 '
 unknown_symbol = '󰂑'
 
 [[battery.display]]
-threshold = 100
+threshold = 99
 charging_symbol = '󱊦'
 discharging_symbol = '󱊣'
 style = 'green'

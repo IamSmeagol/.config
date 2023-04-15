@@ -7,10 +7,10 @@ discharging_symbol = '💀 '
 unknown_symbol = '󰂑'
 
 [[battery.display]]
-threshold = 99
-charging_symbol = '󱊦'
-discharging_symbol = '󱊣'
-style = 'green'
+threshold = 25
+charging_symbol = '󱊤'
+discharging_symbol = '󱊡'
+style = 'red'
 
 [[battery.display]]
 threshold = 50
@@ -19,10 +19,10 @@ discharging_symbol = '󱊢'
 style = 'yellow'
 
 [[battery.display]]
-threshold = 25
-charging_symbol = '󱊤'
-discharging_symbol = '󱊡'
-style = 'red'
+threshold = 99
+charging_symbol = '󱊦'
+discharging_symbol = '󱊣'
+style = 'green'
 
 [aws]
 symbol = "  "

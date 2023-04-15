@@ -1,12 +1,28 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 [battery]
-full_symbol = '🔋 '
+full_symbol = '󰂅 '
 charging_symbol = '⚡️ '
 discharging_symbol = '💀 '
+unknown_symbol = '󰂑'
 
 [[battery.display]]
 threshold = 100
+charging_symbol = '󱊦'
+discharging_symbol = '󱊣'
+style = 'green'
+
+[[battery.display]]
+threshold = 50
+charging_symbol = '󱊥'
+discharging_symbol = '󱊢'
+style = 'yellow'
+
+[[battery.display]]
+threshold = 25
+charging_symbol = '󱊤'
+discharging_symbol = '󱊡'
+style = 'red'
 
 [aws]
 symbol = "  "

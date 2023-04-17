@@ -30,7 +30,7 @@ vim.opt.shiftwidth = 4
 
 vim.opt.splitright = true
 
-vim.opt.fillchars = 'vert:|'
 
 -- Sets theme
-vim.cmd[[colorscheme nord]]
+vim.g.nord_borders = true
+require('nord').set()

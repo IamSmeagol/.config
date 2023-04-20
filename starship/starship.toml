@@ -1,5 +1,22 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+format = '''
+[┌─╼\[](bright-black)$username[\]╾─╼\[](bright-black)$time[\]](bright-black)
+[└─╼\[](bright-black)$directory[\]](bright-black)
+$fossil_branch$git_branch$git_commit$git_state$git_metrics$git_status
+[▶](bright-black)
+'''
+# Define username
+
+[username]
+format = '[$user]($style)'
+show_always = true
+style_root = 'blue'
+style_user = 'blue'
+
+# Define battery 
+
+
 [battery]
 full_symbol = '󰂅 '
 charging_symbol = '⚡️ '
@@ -24,6 +41,18 @@ charging_symbol = '󱊦'
 discharging_symbol = '󱊣'
 style = 'green'
 
+
+# Define time
+
+[time]
+format = '[$time](blue)'
+disabled = false
+
+
+
+# Define symbols
+
+
 [aws]
 symbol = "  "
 
@@ -41,6 +70,7 @@ symbol = " "
 
 [directory]
 read_only = " "
+home_symbol = " ~" # Space makes it centered idk why
 
 [docker_context]
 symbol = " "
@@ -55,6 +85,7 @@ symbol = " "
 symbol = " "
 
 [git_branch]
+format = '[╰╼\[](bright-black)[$symbol$branch](cyan)[\]](bright-black)'
 symbol = " "
 
 [golang]

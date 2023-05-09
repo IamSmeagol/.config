@@ -22,8 +22,6 @@ return {
 		build = "MasonUpdate"
 },
 		'williamboman/mason-lspconfig.nvim',
-		'nvim-lua/plenary.nvim',
-		'jose-elias-alvarez/null-ls.nvim'
 
 }
 

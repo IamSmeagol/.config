@@ -1,6 +1,6 @@
 require('mason').setup()
 require('mason-lspconfig').setup {
-		ensure_installed = { 'lua_ls', 'jsonls' },
+		ensure_installed = { 'lua_ls', 'jsonls', 'rust_analyzer' },
 }
 
 require'lspconfig'.lua_ls.setup {
@@ -35,4 +35,6 @@ require'lspconfig'.jsonls.setup {
 	  },
    },
 }
-require'lspconfig'.taplo.setup{}
+
+require'lspconfig'.rust_analyzer.setup {}
+

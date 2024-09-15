@@ -30,7 +30,7 @@ vim.opt.shiftwidth = 4
 
 vim.opt.splitright = true
 
-vim.g.netrw_alto = "0 1"
+vim.g.netrw_preview = "1"
 
 -- Sets theme
 vim.g.nord_borders = true

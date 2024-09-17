@@ -2,7 +2,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-
+# Manual nvim install
+export PATH="$PATH:/opt/nvim-linux64/bin"
 
 # VI mode in the command line
 set -o vi

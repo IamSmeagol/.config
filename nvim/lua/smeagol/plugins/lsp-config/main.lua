@@ -1,9 +1,10 @@
 require('mason').setup()
 require('mason-lspconfig').setup {
-		ensure_installed = { 'lua_ls', 'jsonls', 'rust_analyzer' },
+		ensure_installed = { 'lua_ls', 'jsonls', 'rust_analyzer', 'clangd' },
 }
 
-require'lspconfig'.lua_ls.setup {
+local lspconfig = require('lspconfig')
+lspconfig.lua_ls.setup {
   settings = {
     Lua = {
       hint = {
@@ -27,7 +28,7 @@ require'lspconfig'.lua_ls.setup {
   },
 }
 
-require'lspconfig'.jsonls.setup {
+lspconfig.jsonls.setup {
    settings = {
 	  json = {
 		 schemas = require('schemastore').json.schemas(),
@@ -36,5 +37,7 @@ require'lspconfig'.jsonls.setup {
    },
 }
 
-require'lspconfig'.rust_analyzer.setup {}
 
+lspconfig.rust_analyzer.setup {}
+
+lspconfig.clangd.setup {}

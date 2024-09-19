@@ -6,52 +6,53 @@
         {
             "command": 
             {
-                "action": "copy",
-                "singleLine": false
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
             },
-            "keys": "ctrl+c"
-        },
-        {
-            "command": "paste",
-            "keys": "ctrl+v"
+            "keys": "alt+shift+d"
         },
         {
             "command": "find",
             "keys": "ctrl+shift+f"
         },
         {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
             "command": 
             {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
+                "action": "copy",
+                "singleLine": false
             },
-            "keys": "alt+shift+d"
+            "keys": "ctrl+c"
         }
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+    "defaultProfile": "{51855cb2-8cce-5362-8f54-464b92b32386}",
     "launchMode": "maximizedFocus",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": 
         {
-            "bellStyle": "window",
             "colorScheme": "Nord",
             "font": 
             {
-                "face": "FiraCode NF"
+                "face": "JetBrainsMono NF"
             }
         },
         "list": 
         [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-                "font": 
-                {
-                    "face": "JetBrainsMono NF"
-                },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
@@ -63,54 +64,51 @@
                 "name": "Command Prompt"
             },
             {
-                "bellStyle": "window",
-                "colorScheme": "Nord",
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "hidden": false,
+                "icon": "C:\\Users\\thesm\\OneDrive\\Pictures\\Icons\\favicon-32x32.png",
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            },
+            {
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "automatic",
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "cursorShape": "bar",
+                "elevate": true,
                 "font": 
                 {
-                    "face": "JetBrainsMono NF",
+                    "face": "Cascadia Mono",
                     "size": 12.0
                 },
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "guid": "{4b71238d-6e07-45dc-b67f-96830c3da677}",
                 "hidden": false,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
+                "historySize": 9001,
+                "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
+                "name": "Admin Windows PowerShell ",
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%",
+                "useAcrylic": false
             },
             {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
-            },
-            {
-                "guid": "{e097b999-05dd-5986-9ae8-296b0c0eb26b}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2019",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{e0dfaae7-293f-581a-aa1e-e14cda0d8d37}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2019",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "bellStyle": "window",
-                "guid": "{dc1a9939-805e-52f2-8735-4ea215461a91}",
-                "hidden": false,
-                "name": "UbuntuDev",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "guid": "{121443f8-af29-5992-b9df-42bab92aabb5}",
+                "guid": "{b3c3e124-bdd0-52cc-8cf2-d77f6668a28c}",
                 "hidden": false,
                 "name": "Developer Command Prompt for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{9a94dac3-eb2f-5681-b88f-91d53d730f5d}",
+                "guid": "{ef83c553-e7e2-5a09-951c-2115505a80f0}",
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+                "hidden": true,
+                "name": "Visual Studio Debug Console",
+                "source": "VSDebugConsole"
             }
         ]
     },
@@ -167,21 +165,21 @@
             "black": "#3B4252",
             "blue": "#81A1C1",
             "brightBlack": "#4C566A",
-            "brightBlue": "#81A1C1",
+            "brightBlue": "#5E81AC",
             "brightCyan": "#8FBCBB",
             "brightGreen": "#A3BE8C",
             "brightPurple": "#B48EAD",
             "brightRed": "#BF616A",
             "brightWhite": "#ECEFF4",
-            "brightYellow": "#EBCB8B",
-            "cursorColor": "#FFFFFF",
+            "brightYellow": "#D08770",
+            "cursorColor": "#D8DEE9",
             "cyan": "#88C0D0",
             "foreground": "#D8DEE9",
             "green": "#A3BE8C",
             "name": "Nord",
             "purple": "#B48EAD",
             "red": "#BF616A",
-            "selectionBackground": "#FFFFFF",
+            "selectionBackground": "#434C5E",
             "white": "#E5E9F0",
             "yellow": "#EBCB8B"
         },
@@ -324,6 +322,29 @@
             "yellow": "#C4A000"
         },
         {
+            "background": "#300A24",
+            "black": "#171421",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#08458F",
+            "brightCyan": "#2C9FB3",
+            "brightGreen": "#26A269",
+            "brightPurple": "#A347BA",
+            "brightRed": "#C01C28",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#A2734C",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#26A269",
+            "name": "Ubuntu-ColorScheme",
+            "purple": "#881798",
+            "red": "#C21A23",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#A2734C"
+        },
+        {
             "background": "#000000",
             "black": "#000000",
             "blue": "#000080",
@@ -347,7 +368,6 @@
             "yellow": "#808000"
         }
     ],
-    "showTerminalTitleInTitlebar": false,
-    "startOnUserLogin": false,
+    "showTabsInTitlebar": true,
     "themes": []
 }

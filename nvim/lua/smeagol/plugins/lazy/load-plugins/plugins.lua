@@ -1,7 +1,6 @@
 return {
 
 		'folke/neodev.nvim', -- NEO DEV HELPS WITH NVIM CONFIG
-
 		-- CMP PLUGINS
 		'hrsh7th/nvim-cmp',
 		'hrsh7th/cmp-buffer',

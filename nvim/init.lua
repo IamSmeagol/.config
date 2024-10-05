@@ -1,7 +1,2 @@
--- Leader needs to be before lazy
-vim.g.mapleader = " "
----------
-
-require("smeagol/plugins/pluginhandler")
-require("smeagol/utils")
-require("smeagol/remap")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")

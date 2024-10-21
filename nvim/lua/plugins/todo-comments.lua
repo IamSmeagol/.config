@@ -8,7 +8,6 @@ return {
       "--with-filename",
       "--line-number",
       "--column",
-      "--glob=!Downloads/",
     },
     -- regex that will be used to match keywords.
     -- don't replace the (KEYWORDS) placeholder

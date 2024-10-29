@@ -4,8 +4,7 @@ format = '''
 [┌─╼\[](bright-black)$shell[\]╾─╼\[](bright-black)$username[\]╾─╼\[](bright-black)$time[\]](bright-black)
 [└─╼\[](bright-black)$directory[\]](bright-black)
 $fossil_branch$git_branch$git_commit$git_state$git_metrics$git_status
-[▶](bright-black)
-'''
+[▶](bright-black) '''
 # Define username
 
 [username]

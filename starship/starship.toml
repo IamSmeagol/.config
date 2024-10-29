@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = '''
-[┌─╼\[](bright-black)$username[\]╾─╼\[](bright-black)$time[\]](bright-black)
+[┌─╼\[](bright-black)$shell[\]╾─╼\[](bright-black)$username[\]╾─╼\[](bright-black)$time[\]](bright-black)
 [└─╼\[](bright-black)$directory[\]](bright-black)
 $fossil_branch$git_branch$git_commit$git_state$git_metrics$git_status
 [▶](bright-black)
@@ -11,7 +11,7 @@ $fossil_branch$git_branch$git_commit$git_state$git_metrics$git_status
 [username]
 format = '[$user]($style)'
 show_always = true
-style_root = 'blue'
+style_root = 'white'
 style_user = 'blue'
 
 # Define battery 
@@ -48,6 +48,11 @@ style = 'green'
 format = '[$time](blue)'
 disabled = false
 
+# Define Shell
+[shell]
+disabled = false
+style = "blue"
+format = "[$indicator]($style)"
 
 
 # Define symbols

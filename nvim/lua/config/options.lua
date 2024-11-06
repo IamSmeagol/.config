@@ -16,5 +16,3 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
 vim.opt.wrap = true
 
 vim.opt.shell = "bash"
-
-vim.opt.path:append({ "**" })

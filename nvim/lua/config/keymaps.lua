@@ -7,3 +7,8 @@ local keymap = vim.keymap.set
 -- Makes J and K visually line wise rather than absolute
 keymap("n", "j", "gj")
 keymap("n", "k", "gk")
+
+-- To remove <C-space> which is used by tmux
+-- Removes insert mode cmp.complete which shows the cmp pop up
+-- removes two treesitter commands, need to look into replacing them
+keymap({ "n", "i", "x" }, "<C-space>", "<Nop>")

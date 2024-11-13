@@ -15,4 +15,8 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
 
 vim.opt.wrap = true
 
-vim.opt.shell = "bash"
+if jit.os == "Windows" then
+  vim.opt.shell = "powershell.exe"
+else
+  vim.opt.shell = "bash.exe"
+end

@@ -5,6 +5,9 @@
 # Manual nvim install
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
+# LATEX
+export PATH="$PATH:/usr/local/texlive/2024/bin/x86_64-linux"
+
 # VI mode in the command line
 set -o vi
 

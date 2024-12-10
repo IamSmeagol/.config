@@ -12,3 +12,6 @@ keymap("n", "k", "gk")
 -- Removes insert mode cmp.complete which shows the cmp pop up
 -- removes two treesitter commands, need to look into replacing them
 keymap({ "n", "i", "x" }, "<C-space>", "<Nop>")
+
+keymap("i", "<M-'>", "'", { noremap = true, silent = false, desc = "Single Quote (Unpaired)" })
+keymap("i", '<M-">', '"', { noremap = true, silent = false, desc = "Double Quote (Unpaired)" })

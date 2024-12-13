@@ -5,13 +5,13 @@
 local keymap = vim.keymap.set
 
 -- Makes J and K visually line wise rather than absolute
-keymap("n", "j", "gj")
-keymap("n", "k", "gk")
+keymap("n", "j", "gj", { silent = true, desc = "j moves display linewise" })
+keymap("n", "k", "gk", { silent = true, desc = "k moves display linewise" })
 
 -- To remove <C-space> which is used by tmux
 -- Removes insert mode cmp.complete which shows the cmp pop up
 -- removes two treesitter commands, need to look into replacing them
 keymap({ "n", "i", "x" }, "<C-space>", "<Nop>")
 
-keymap("i", "<M-'>", "'", { noremap = true, silent = false, desc = "Single Quote (Unpaired)" })
-keymap("i", '<M-">', '"', { noremap = true, silent = false, desc = "Double Quote (Unpaired)" })
+keymap("i", "<M-'>", "'", { noremap = true, silent = true, desc = "Single Quote (Unpaired)" })
+keymap("i", '<M-">', '"', { noremap = true, silent = true, desc = "Double Quote (Unpaired)" })

@@ -4,7 +4,8 @@
 
 # LATEX
 export PATH="$PATH:/usr/local/texlive/2024/bin/x86_64-linux"
-
+# FZF
+export PATH="$PATH:/home/smeagol/bin/fzf"
 # VI mode in the command line
 set -o vi
 

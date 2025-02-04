@@ -18,5 +18,5 @@ vim.opt.wrap = true
 if jit.os == "Windows" then
   vim.opt.shell = "powershell.exe"
 else
-  vim.opt.shell = "bash.exe"
+  vim.opt.shell = "fish"
 end

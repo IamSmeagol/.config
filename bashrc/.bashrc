@@ -3,7 +3,8 @@
 # for examples
 
 # LATEX
-export PATH="$PATH:/usr/local/texlive/2024/bin/x86_64-linux"
+# export PATH="$PATH:/usr/local/texlive/2024/bin/x86_64-linux"
+export PATH="/usr/local/texlive/2025/bin/x86_64-linux:$PATH"
 # FZF
 export PATH="$PATH:/home/smeagol/bin/fzf"
 # VI mode in the command line

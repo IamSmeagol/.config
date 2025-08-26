@@ -5,4 +5,6 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+fzf --fish | source
+set -x FZF_ALT_C_OPTS '--walker-skip .git,node_modules,target --preview \'cat {}\''
 starship init fish | source

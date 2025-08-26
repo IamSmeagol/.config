@@ -1,3 +1,16 @@
 -- Autocmds are automatically loaded on the VeryLazy event
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
+-- local group = vim.api.nvim_create_augroup("DisableDiagnosticsForReadonlyMD", { clear = true })
+--
+-- vim.api.nvim_create_autocmd("BufWinEnter", {
+--   group = group,
+--   pattern = "*.md",
+--   callback = function()
+--     vim.defer_fn(function()
+--       if vim.bo.readonly then
+--         vim.diagnostic.enable(false, { bufnr = 0 })
+--       end
+--     end, 100) -- Delay of 100ms
+--   end,
+-- })

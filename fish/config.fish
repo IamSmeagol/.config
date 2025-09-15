@@ -6,5 +6,6 @@ if status is-interactive
 end
 
 fzf --fish | source
-set -x FZF_ALT_C_OPTS '--walker-skip .git,node_modules,target --preview \'cat {}\''
+set -x FZF_ALT_C_OPTS '--walker-skip .git,node_modules,target --preview \'ls {}\''
 starship init fish | source
+zoxide init fish | source

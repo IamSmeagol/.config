@@ -5,6 +5,10 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+if type -q nvim
+    set -gx MANPAGER "nvim +Man!"
+end
+
 fzf --fish | source
 set -x FZF_ALT_C_OPTS '--walker-skip .git,node_modules,target --preview \'ls {}\''
 starship init fish | source

@@ -10,13 +10,13 @@ keymap("n", "j", function()
     return "gj"
   end
   return "j"
-end, { silent = true, desc = "j moves display linewise" })
+end, { expr = true, silent = true, desc = "j moves display linewise" })
 keymap("n", "k", function()
   if vim.v.count == 0 then
     return "gk"
   end
   return "k"
-end, { silent = true, desc = "k moves display linewise" })
+end, { expr = true, silent = true, desc = "k moves display linewise" })
 
 -- To remove <C-space> which is used by tmux
 -- Removes insert mode cmp.complete which shows the cmp pop up

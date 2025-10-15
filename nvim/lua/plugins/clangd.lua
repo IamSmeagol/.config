@@ -1,5 +1,5 @@
 if vim.fn.getcwd():match("%.X$") then
-  print("I am ending with .X")
+  -- print("I am ending with .X")
   return {
     "neovim/nvim-lspconfig",
     opts = {
@@ -51,7 +51,7 @@ if vim.fn.getcwd():match("%.X$") then
     },
   }
 end
-print("I don't end with .X")
+-- print("I don't end with .X")
 return {
   "neovim/nvim-lspconfig",
   opts = {

@@ -1,7 +1,6 @@
 # Things to learn in neovim
 
 - [] Setup C++ support
-- [] Figure out why inline TODO isn't working
 - [] Figure out why `gf` didn't work in lua
 - [x] Figure out how to customize `<leader>ft` terminal
 - [] Neogit?

@@ -1,7 +1,7 @@
 return {
   -- add nord
   {
-    "IamSmeagol/nord.nvim",
+    "gbprod/nord.nvim",
     opts = {
       transparent = true,
     },
